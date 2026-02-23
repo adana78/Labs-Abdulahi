@@ -108,20 +108,34 @@ a {
    - Set cursor to pointer
    - Set transition to all 0.3s ease
 */
-
+.btn{
+   padding:12px 24px ;
+   font: size 16px; ;
+   border: none;
+   border-radius:6px;
+   cursor:pointer;
+   transition : 0.3s ease;
+}
 
 /* TODO: Style .btn-primary
    - Set background-color to #3498db
    - Set color to white
 */
-
+.btn-primary{
+   background-color:#3498db;
+   color: whitesmoke;
+}
 
 /* TODO: Style .btn-primary:hover
    - Set background-color to #2980b9
    - Set box-shadow to 0 4px 8px rgba(52, 152, 219, 0.3)
    - Set transform to translateY(-2px)
 */
-
+.btn-primary:hover{
+   background-color: aqua;
+   box-shadow: #e0e0e0;
+   transform: rotateZ('angle');
+}
 
 /* TODO: Style .btn-secondary
    - Set background-color to #ecf0f1
