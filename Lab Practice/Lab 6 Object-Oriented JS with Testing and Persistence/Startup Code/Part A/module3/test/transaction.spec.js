@@ -7,8 +7,8 @@
 // Chai gives you expect() to make assertions.
 // Together they let you verify your code works correctly.
 
-const { expect } = require("chai");
-const { Transaction, Account, SavingsAccount } = require("../js/transaction");
+import { expect } from "chai";
+import { Transaction, Account, SavingsAccount } from "../js/transaction.js";
 
 
 // ---- Exercise 1: Test the Transaction class ----

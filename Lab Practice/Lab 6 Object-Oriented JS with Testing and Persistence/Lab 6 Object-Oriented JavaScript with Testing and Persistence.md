@@ -248,7 +248,7 @@ Writing code is one thing. Proving it works is another. Unit tests are small, au
 **Test Structure:**
 
 ```javascript
-const { expect } = require("chai");
+import { expect } from "chai";
 
 describe("Transaction", () => {
 
@@ -299,9 +299,10 @@ npm init -y
 npm install --save-dev mocha chai
 ```
 
-After running these commands, open the generated `package.json`. You'll see mocha and chai listed under `devDependencies`. Now change the `"test"` script so npm knows how to run your tests:
+After running these commands, open the generated `package.json`. You'll see mocha and chai listed under `devDependencies`. Now add `"type": "module"` and change the `"test"` script so npm knows how to run your tests:
 
 ```json
+"type": "module",
 "scripts": {
     "test": "mocha"
 }
@@ -512,7 +513,7 @@ Call `manager.getCategorySummary()`. Use `Object.entries()` to loop through the 
 | Using `this` before `super()`           | `super()` must come first. Then you can set child properties.         |
 | Not calling `new`                         | `Transaction("Rent", 3500)` fails. Must use `new Transaction(...)`. |
 | localStorage stores strings only            | Always `JSON.stringify()` when saving, `JSON.parse()` when loading. |
-| Tests not finding classes                   | Check the `require()` path matches where your file is.                |
+| Tests not finding classes                   | Check the `import` path matches where your file is (include `.js` extension). |
 | `expect(x).to.equal(y)` fails for objects | Use `.to.deep.equal()` for objects and arrays.                        |
 
 ---
