@@ -1340,3 +1340,4 @@ Build an object-oriented account manager with data persistence and interactive c
 **Congratulations on completing Lab 4!**
 
 You've mastered CSS layouts with Flexbox and Grid. Your MyFinance Dashboard is now fully responsive and looks great on any device. This completes your CSS foundation - next up is JavaScript interactivity!
+**Author:** Abdulahi Hassen
