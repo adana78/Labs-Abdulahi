@@ -88,6 +88,7 @@ That's a plain object. No built-in behavior, no structure enforcement. Classes g
 
 ```javascript
 class Transaction {
+String descrition
     constructor(description, amount, type, category) {
         this.description = description;
         this.amount = amount;
