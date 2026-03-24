@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+
 import { promises as fs } from "fs";
 import path from "path";
 
@@ -15,6 +16,7 @@ async function readAccounts() {
 async function writeAccounts(data) {
     fs.writeFile(dataPath, JSON.stringify(data, null, 4))
 }
+
 
 export async function GET() {
     const accounts = await readAccounts()
