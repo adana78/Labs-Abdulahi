@@ -1,0 +1,22 @@
+import { NextResponse } from "next/server";
+import { promises as fs } from "fs";
+import path from "path";
+
+const dataPath = path.join(process.cwd(), "data", "accounts.json");
+
+// create the reading and writing functions
+
+async function readAccounts() {
+    const data = await fs.readFile(dataPath, "utf-8");
+    return JSON.parse(data);
+}
+
+
+async function writeAccounts(data) {
+    fs.writeFile(dataPath, JSON.stringify(data, null, 4))
+}
+
+export async function GET() {
+    const accounts = await readAccounts()
+    return NextResponse.json(accounts, { status: 200 })
+}
