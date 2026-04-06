@@ -1,0 +1,23 @@
+[
+    {
+        "id": 3,
+        "name": "Emergency Fund",
+        "type": "savings",
+        "balance": 10000,
+        "status": "active"
+    },
+    {
+        "id": 4,
+        "name": "Old Account",
+        "type": "checking",
+        "balance": 0,
+        "status": "closed"
+    },
+    {
+        "id": 66,
+        "name": "Main Checking",
+        "type": "checking",
+        "balance": 18885420.5,
+        "status": "active"
+    }
+]

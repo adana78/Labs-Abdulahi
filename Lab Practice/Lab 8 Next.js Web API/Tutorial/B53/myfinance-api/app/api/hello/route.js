@@ -29,3 +29,5 @@ export async function DELETE(request, { params }) {
     const message = "Welcome to Finances DELETE API End point /api/account"
     return NextResponse.json(message)
 }
+
+// npm i
