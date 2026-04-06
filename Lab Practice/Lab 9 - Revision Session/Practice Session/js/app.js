@@ -1,4 +1,5 @@
 /* =================================
+<<<<<<< HEAD
   MyFinance Transaction Manager
   Practice Session
 
@@ -10,6 +11,19 @@
     POST   /transactions       → Create a new transaction
     PUT    /transactions/:id   → Update a transaction
     DELETE /transactions/:id   → Delete a transaction
+=======
+   MyFinance Transaction Manager
+   Practice Session
+
+   API URL: https://myfinance-api-bay.vercel.app/transactions
+
+   Endpoints:
+     GET    /transactions       → Fetch all transactions
+     GET    /transactions/:id   → Fetch one transaction
+     POST   /transactions       → Create a new transaction
+     PUT    /transactions/:id   → Update a transaction
+     DELETE /transactions/:id   → Delete a transaction
+>>>>>>> d689806cc584f1532deeae5ef62392a131c43467
    ================================= */
 
 // Write ALL your code below this line

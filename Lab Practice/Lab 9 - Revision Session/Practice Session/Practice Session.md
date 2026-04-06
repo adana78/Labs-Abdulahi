@@ -12,6 +12,7 @@ Read `index.html` to find the element IDs you need. Open with Live Server. Reset
 
 Base URL: `https://myfinance-api-bay.vercel.app/transactions`
 
+<<<<<<< HEAD
 | Method | Endpoint              | Body                                        |
 | ------ | --------------------- | ------------------------------------------- |
 | GET    | `/transactions`     | none                                        |
@@ -21,6 +22,16 @@ Base URL: `https://myfinance-api-bay.vercel.app/transactions`
 
 Transaction shape:
 
+=======
+| Method | Endpoint | Body |
+|--------|----------|------|
+| GET | `/transactions` | none |
+| POST | `/transactions` | `{ description, amount, type, category }` |
+| PUT | `/transactions/:id` | `{ description, amount, type, category }` |
+| DELETE | `/transactions/:id` | none |
+
+Transaction shape:
+>>>>>>> d689806cc584f1532deeae5ef62392a131c43467
 ```json
 {
     "id": 1,
