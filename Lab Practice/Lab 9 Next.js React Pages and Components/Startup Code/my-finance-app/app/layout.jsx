@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,31 +23,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <nav>
-          <ul>
-            <li>
-              <a href="/">Home</a>
-              <a href="/about">About</a>
-              <a href="/transactions">Transactions</a>
-            </li>
-          </ul>
-        </nav>
+        <NavBar></NavBar>
         {children}
 
-
-
-        <footer>
-          <h2>The below are using Link Tags</h2>
-          <nav>
-            <ul>
-              <li>
-                <Link href={"/"}>Home</Link>
-                <Link href={"/about"}>About</Link>
-                <Link href={"/transactions"}>Transactions</Link>
-              </li>
-            </ul>
-          </nav>
-        </footer>
       </body>
     </html>
   );
