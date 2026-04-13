@@ -9,8 +9,11 @@ function TransactionRow({ t }) {
             <td>{t.category}</td>
             <td><span class={"badge badge--" + t.type}>{t.type}</span></td>
             <td className={amountClass}>{t.amount}</td>
-            <td>${t.date}</td>
-        </tr >
+            <td>{t.date}</td>
+            <td>
+                <button class="btn btn--small btn--danger">Delete</button>
+            </td>
+        </tr>
     )
 
 }
