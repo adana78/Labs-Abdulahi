@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
+import TransactionRow from '@/app/components/TransactionRow'
 
 function Transactions() {
 
@@ -34,7 +35,7 @@ function Transactions() {
                     </select>
                 </div>
 
-                <div class="table-container">
+                <div className="table-container">
                     <table>
                         <thead>
                             <tr>
@@ -47,7 +48,7 @@ function Transactions() {
                             </tr>
                         </thead>
                         <tbody>
-                            ${transactions.map(t => }
+                            {transactions.map(t => <TransactionRow t={t} key={t.id}></TransactionRow>)}
                         </tbody>
                     </table>
                 </div>
